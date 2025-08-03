@@ -1,0 +1,26 @@
+{
+  // Java Config
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.edit.organizeImports.onSave": true,
+  "java.completion.importOrder": ["java", "javax", "com", "org"],
+  "java.completion.filteredTypes": ["java.awt.*", "com.sun.*"],
+
+  // Editor Preferences
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.defaultFormatter": "redhat.java",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+
+  // HTML/JS (Optional for web part of your project)
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
