@@ -1,9 +1,26 @@
 package com.sujal.eventpass.model;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 public class EventDetails {
+    @NotBlank(message = "Name can't be empty")
     private String name;
+
+    @Email(message = "Enter a valid email")
+    @NotBlank(message = "Email is required")
     private String email;
+
+    @NotBlank(message = "Event name is required")
     private String eventName;
+
+    public EventDetails() {}
+
+    public EventDetails(String name, String email, String eventName) {
+        this.name = name;
+        this.email = email;
+        this.eventName = eventName;
+    }
 
     // Getters and Setters
     public String getName() { return name; }

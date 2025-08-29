@@ -36,6 +36,11 @@
      <scope>runtime</scope>
     </dependency>
 
+    <!-- Validation API -->
+    <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+    </dependency>
 
     <!-- QR Code Generator -->
     <dependency>
@@ -66,6 +71,7 @@
       <version>7.2.3</version>
     </dependency>
   </dependencies>
+
   <build>
   <plugins>
     <plugin>
